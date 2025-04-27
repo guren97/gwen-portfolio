@@ -73,7 +73,7 @@ const Hero = () => {
               self-taught Web Developer from the Philippines.
             </p>
 
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full mt-6 gap-4 sm:gap-0">
+            <div className="flex  sm:flex-row justify-between items-center sm:items-center w-full mt-6 gap-4 sm:gap-12 ">
               <button
                 onClick={() => scrollToWorks("projects")}
                 className="px-6 py-3 bg-yellow-400 text-blue-900 cursor-pointer text-lg font-bold font-link-pixel-font rounded-lg shadow-lg   drop-shadow-[4px_4px_0px_rgba(0,0,139,1)] hover:scale-105 transition-all duration-300"
