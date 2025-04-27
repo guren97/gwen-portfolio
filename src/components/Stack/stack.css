@@ -1,0 +1,36 @@
+.pixel-border {
+    position: relative; 
+  }
+  
+  .pixel-border::before { 
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 4px;
+    background: repeating-linear-gradient(
+      
+        90deg,
+        rgba(0,0,139,1),
+        rgba(0,0,139,1) 4px,
+        transparent 4px,
+        transparent 8px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        rgba(0,0,139,1),
+        rgba(0,0,139,1) 4px,
+        transparent 4px,
+        transparent -8px
+      );
+    z-index: -30;
+  }
+  
+  .white-dot{ 
+    height: 6px;
+    width: 6px;
+  }
+
+  

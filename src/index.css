@@ -1,0 +1,76 @@
+
+
+@font-face {
+    font-family: PixelFont;
+    src: url('../src/assets/fonts/PixelFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: LinkPixelFont;
+    src: url('../src/assets/fonts/LinkPixelFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Jersey15;
+    src: url('../src/assets/fonts/Jersey15-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import "tailwindcss";
+
+
+@theme{
+    --font-pixel-font: PixelFont, 'sans-serif';
+    --font-link-pixel-font: LinkPixelFont, 'sans-serif';
+    --font-jersey: Jersey15, 'sans-serif';
+    
+}
+
+@keyframes floating {
+    0% {
+      transform: translateY(0);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-20px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0.8;
+    }
+  }
+  
+  .animate-floating {
+    animation: floating infinite ease-in-out alternate;
+  }
+  
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+
+  .microlink-card {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .microlink-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
