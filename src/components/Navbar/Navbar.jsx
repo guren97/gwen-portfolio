@@ -100,7 +100,7 @@ const Navbar = () => {
               animate={{ x: 0, y: 0 }}
               exit={{ x: "100%", y: "0%" }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="fixed top-0 right-0 h-full w-2/4 sm:w-2/2 bg-blue-900 flex flex-col items-center justify-center space-y-6 z-50 shadow-lg px-12"
+              className="fixed top-0 right-0 h-full w-4/4 sm:w-2/2 bg-blue-900 flex flex-col items-center justify-center space-y-6 z-50 shadow-lg px-12"
             >
               {/* Close Button */}
               <button
