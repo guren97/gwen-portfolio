@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       <LenisProvider>
-        <Router basename="/gwen-portfolio">
+        <Router>
           <Navbar />
           <Routes>
             <Route
