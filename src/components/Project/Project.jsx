@@ -118,7 +118,7 @@ const Project = () => {
                 to={project.url}
                 target="_blank"
                 key={index}
-                className="flex flex-col items-center justify-center relative bg-white border-4 border-yellow-500 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 w-full sm:w-[90%] md:w-[45%] lg:w-[30%] xl:w-[24%] p-4"
+                className="flex flex-col items-center justify-center relative bg-white border-4 border-yellow-500 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 w-full sm:w-[90%] md:w-[45%] lg:w-[30%] xl:w-[24%] p-4 drop-shadow-[4px_4px_0px_rgba(0,0,139,1)] "
               >
                 {project.commissioned === 1 && (
                   <div className="absolute top-2 left-2 text-blue-600 bg-yellow-400 px-2 py-1 rounded-md text-xs font-jersey tracking-wide drop-shadow-[2px_2px_0px_rgba(0,0,139,1)]">

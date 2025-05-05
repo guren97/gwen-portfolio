@@ -60,7 +60,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <button
               key={link.id}
@@ -70,6 +70,34 @@ const Navbar = () => {
               {link.label}
             </button>
           ))}
+          <a
+            href="/resume.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="px-4 py-2 flex items-center gap-2 bg-yellow-400 text-blue-900 cursor-pointer text-base sm:text-lg font-bold font-link-pixel-font rounded-lg shadow-sm drop-shadow-[4px_4px_0px_rgba(0,0,139,1)] hover:scale-105 transition-all duration-300"
+          >
+            Resume
+            <motion.div
+              className="  inline-flex items-center justify-center  "
+              animate={{
+                y: [-2, 2, -2], // bounce up and down
+                transition: {
+                  duration: 1,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
+            >
+              <svg
+                className="w-5 h-5 sm:w-6 sm:h-6 drop-shadow-[1px_1px_0px_rgba(0,0,139,1)]"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M11 4h2v8h2v2h-2v2h-2v-2H9v-2h2V4zm-2 8H7v-2h2v2zm6 0v-2h2v2h-2zM4 18h16v2H4v-2z" />
+              </svg>
+            </motion.div>
+          </a>
         </div>
 
         <button
@@ -121,8 +149,37 @@ const Navbar = () => {
                 </button>
               ))}
 
+              <a
+                href="/resume.pdf"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="w-full text-xl max-w-xs px-4 py-3 flex justify-center items-center gap-2 bg-yellow-400 text-blue-900 cursor-pointer   sm:text-lg font-bold font-link-pixel-font rounded-lg shadow-sm drop-shadow-[4px_4px_0px_rgba(0,0,139,1)] hover:scale-105 transition-all duration-300"
+              >
+                Resume
+                <motion.div
+                  className="inline-flex items-center justify-center"
+                  animate={{
+                    y: [-2, 2, -2],
+                    transition: {
+                      duration: 1,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    },
+                  }}
+                >
+                  <svg
+                    className="w-6 h-6 sm:w-6 sm:h-6 drop-shadow-[1px_1px_0px_rgba(0,0,139,1)]"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M11 4h2v8h2v2h-2v2h-2v-2H9v-2h2V4zm-2 8H7v-2h2v2zm6 0v-2h2v2h-2zM4 18h16v2H4v-2z" />
+                  </svg>
+                </motion.div>
+              </a>
+
               <div className="flex flex-col items-center md:items-start space-y-6 w-full border-t border-white ">
-                <h1 className="text-xl font-bold font-link-pixel-font text-white drop-shadow-[2px_2px_0px_rgba(0,0,139,1)]    pt-4 w-full items-center flex justify-center">
+                <h1 className="text-xl font-bold font-link-pixel-font text-white drop-shadow-[2px_2px_0px_rgba(0,0,139,1)] pt-4 w-full items-center flex justify-center">
                   Socials
                 </h1>
                 <div className="flex space-x-6 text-3xl">

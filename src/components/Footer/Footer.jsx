@@ -24,7 +24,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-100 text-slate-700 px-6 py-12 md:py-20 lg:py-24 md:px-12">
+    <footer className="bg-gray-50 text-slate-700 px-6 py-12 md:py-20 lg:py-24 md:px-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between text-center md:text-left space-y-10 md:space-y-0 lg:px-24">
         <div className="flex flex-col items-center md:items-start space-y-6">
           <h1 className="text-xl font-bold font-link-pixel-font">Socials</h1>
@@ -82,9 +82,8 @@ const Footer = () => {
 
         <motion.button
           onClick={() => scrollToWorks("home")}
-          className="px-4 py-2 mt-6 flex items-center gap-2 bg-yellow-400 text-blue-900 cursor-pointer text-base sm:text-lg font-bold font-link-pixel-font rounded-lg shadow-lg drop-shadow-[4px_4px_0px_rgba(0,0,139,1)] hover:scale-105 transition-all duration-300"
+          className="px-4 py-2 mt-6 flex items-center gap-2 bg-yellow-400 text-blue-900 cursor-pointer text-base sm:text-lg font-bold font-link-pixel-font rounded-lg shadow-sm drop-shadow-[4px_4px_0px_rgba(0,0,139,1)] hover:scale-105 transition-all duration-300"
         >
-          Go to Top
           <svg
             className="w-5 h-5 sm:w-6 sm:h-6  drop-shadow-[1px_1px_0px_rgba(0,0,139,1)] "
             fill="currentColor"

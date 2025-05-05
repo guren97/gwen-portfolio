@@ -95,7 +95,7 @@ const ProjectCard = () => {
         <div
           ref={scrollRef}
           className="flex flex-nowrap gap-6 p-4 overflow-x-auto hide-scrollbar scroll-smooth snap-x snap-mandatory 
-          sm:grid sm:grid-cols-2 sm:overflow-visible lg:grid-cols-3 drop-shadow-[5px_5px_0px_rgba(0,0,139,1)] rounded-lg"
+          sm:grid sm:grid-cols-2 sm:overflow-visible lg:grid-cols-3 drop-shadow-[5px_5px_0px_rgba(0,0,139,1)] rounded-lg "
         >
           {projects.map((project) => (
             <motion.div
